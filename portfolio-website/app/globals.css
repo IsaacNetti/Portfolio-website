@@ -6,14 +6,6 @@
   --color-accent: #9ece6a;
   --color-text: #c0caf5;
   --color-background: #1a1a2e;
-}
-
-@theme inline {
-  --color-primary: var(--color-primary);
-  --color-secondary: var(--color-secondary);
-  --color-accent: var(--color-accent);
-  --color-text: var(--color-text);
-  --color-background: var(--color-background);
   --font-mono: 'Courier New', monospace;
 }
 

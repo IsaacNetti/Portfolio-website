@@ -9,7 +9,6 @@ export const defaultTheme: Theme = {
 };
 
 export const themes: Theme[] = [
-  defaultTheme,
   {
     primary: '#1a1b26',
     secondary: '#24283b',
