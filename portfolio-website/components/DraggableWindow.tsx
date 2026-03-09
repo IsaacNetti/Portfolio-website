@@ -61,6 +61,7 @@ export default function DraggableWindow({
 
   const handleTouchMove = (e: TouchEvent) => {
     if (!isDragging) return;
+    e.preventDefault();
     const touch = e.touches[0];
     setPosition({
       x: touch.clientX - dragStart.current.x,
