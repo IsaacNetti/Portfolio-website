@@ -11,7 +11,7 @@ export const projects: Project[] = [
   {
     id: '2',
     title: 'This Website',
-    description: 'My personal portfolio website. Built with React and TypeScript.',
+    description: 'My personal website. Built with React and TypeScript.',
     image: 'Portfolio.jpg',
     link: '#',
   },
