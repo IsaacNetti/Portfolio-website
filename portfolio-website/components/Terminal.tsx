@@ -77,7 +77,7 @@ export default function Terminal({ onOpenWindow }: TerminalProps) {
       <div className="mb-4">
         <h1 className="text-4xl font-bold text-accent mb-2">Isaac Netti</h1>
         <h2 className="font-bold text-accent mb-2">UX/UI Web developer and IT Professional</h2>
-        <p className="text-text">Type 'help' to get started</p>
+        <p className="text-text">Type 'help' and press enter to get started</p>
       </div>
       <div className="space-y-1 mb-4 max-h-64 overflow-y-auto" ref={outputRef}>
         {output.map((line, index) => (
@@ -94,7 +94,6 @@ export default function Terminal({ onOpenWindow }: TerminalProps) {
           className="flex-1 bg-transparent border-none outline-none text-text"
           autoComplete="off"
         />
-        <span className="animate-pulse text-accent">|</span>
       </form>
     </div>
   );
