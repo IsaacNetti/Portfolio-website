@@ -24,3 +24,13 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.no-scroll {
+  touch-action: none;
+  -ms-touch-action: none; /* For older IE compatibility */
+}
+
+.noscroll {
+  overflow: hidden;
+  touch-action: none;
+}

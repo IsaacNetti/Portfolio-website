@@ -56,12 +56,12 @@ export default function DraggableWindow({
       x: touch.clientX - position.x,
       y: touch.clientY - position.y,
     };
+    document.body.classList.add('noscroll');
     onFocus();
   };
 
   const handleTouchMove = (e: TouchEvent) => {
     if (!isDragging) return;
-    e.preventDefault();
     const touch = e.touches[0];
     setPosition({
       x: touch.clientX - dragStart.current.x,
@@ -71,6 +71,7 @@ export default function DraggableWindow({
 
   const handleTouchEnd = () => {
     setIsDragging(false);
+    document.body.classList.remove('noscroll');
   };
 
   useEffect(() => {
@@ -96,7 +97,7 @@ export default function DraggableWindow({
 
   return (
     <div
-      className="absolute"
+      className="absolute no-scroll"
       style={{
         left: position.x,
         top: position.y,
