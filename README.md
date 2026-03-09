@@ -1,5 +1,5 @@
 # Personal-website
-My Personal website, learn all about me and what I love to do
+My personal website, learn all about me and what I love to do
 
 https://isaacnetti.vercel.app
 
